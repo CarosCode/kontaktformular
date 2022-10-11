@@ -1,0 +1,539 @@
+/*Formular*/
+.div_formular{
+  width: 100%;
+  max-width: 45em;
+  height: 90%;
+  margin: auto;
+  margin-top: 10em;
+  border: 1px solid;
+  border-color: #f3931c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7em;
+}
+
+/*Flexbox headline*/
+div.headline{
+  display: flex;
+  align-items: center;
+  margin-left: -3% ;
+  padding: 1% 0 4% 0;
+}
+
+img{
+  padding: 1% 2% 0 3%;
+  height: 3em;
+}
+
+.h1{
+  width: 100%;
+  margin-left: 2%;
+}
+
+/*Flexbox Vor- und Nachname*/
+div.inputfields_vor_und_nachname{
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 5%;
+}
+
+div.div_vorname{
+  width: 100%;
+  height: 7em;
+}
+
+div.div_nachname{
+  width: 100%;
+  height: 7em;
+}
+
+/*Flexbox Email und Telefon*/
+div.inputfields_email_und_telefon{
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 5%;
+}
+
+div.div_email{
+  width: 100%;
+  height: 7em;
+}
+
+div.div_telefon{
+  width: 100%;
+  height: 7em;
+}
+
+/*Flexbox Datenschutz*/
+div.container{
+  display: flex;
+  align-items: center;
+  margin: 0 5% 0 2%;
+}
+
+/*Eingabefelder*/
+input{
+  height: 2.5em;
+  width: 100%;
+  max-width: 16em;
+  background-color: #f5f5f5;
+  border: 0em;
+  
+}
+
+::placeholder{
+  padding-left: 10px;
+  padding-top: 0.6em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  color:#999999;
+}
+
+/*Beschriftung oberhalb Eingabefeldern*/
+label{
+  margin: 2% 0 3% 5%;
+  color: #f3931c;
+}
+
+div,label{
+  margin-left: 5%;
+}
+
+/*Verhältnis Beschriftung & Eingabefeld*/
+label,input{
+  display: block;
+  border-radius: 2em;
+  font-family: 'Roboto', sans-serif; 
+}
+
+/*Input Vorname*/
+input#vorname{
+  padding-left: 0.5em;
+}
+
+/*Input Nachname*/
+input#nachname{
+  padding-left: 0.5em;
+}
+
+/*Input Email*/
+input#email{
+  padding-left: 0.5em;
+}
+
+/*Input Telefon*/
+input#telefonnummer{
+  padding-left: 0.5em;
+}
+
+/*Textbox / Textarea*/
+div.textbox{
+  display: block;
+  margin-right: 5%;
+}
+
+textarea#text{
+  width: 100%;
+  max-width: 33.5em;
+  height: 7em;
+  border-radius: 1em;
+  background-color:#f5f5f5;
+  border: 0em;
+  font-family: 'Roboto', sans-serif;  
+  padding: 0.5em;/*Padding Textbox auch bei Input*/
+}
+
+/*Text Datenschutz*/
+.datenschutz>p{
+  font-size: 0.8em;
+  display: block;
+  text-align: left;
+}
+
+/*Text unter Submit-Button*/
+p{
+  font-size: 0.8em;
+  display: block;
+  text-align: center;
+}
+
+/* Switch-Button - Box*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4em;
+  height: 2.2em;
+  margin-left: 5%;
+}
+
+/* Default Checkbox unsichtbar machen */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Switch-Button */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 2em;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.3em;
+  width: 1.3em;
+  left: 0.4em;
+  bottom: 0.45em;
+  background-color: #999999;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/*Farbänderung, wenn Slider aktiv*/
+input:checked + .slider {
+  background-color: #f3931c;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(2em);
+  -ms-transform: translateX(2em);
+  transform: translateX(2em);
+}
+
+/*Datenschutz-Text*/
+a:link, a:visited {
+  text-decoration: none;
+  color:deeppink;
+ }
+ 
+/*Submit-Button*/
+.submit{
+  height: 2.7em;
+  width: 100%;
+  max-width: 34em;
+  background-color: #f3931c;
+  color: white;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 2em;
+  text-align: left;
+  line-height: 2.5;
+  padding-left: 3%;
+  
+}
+
+/*Submit-Button: Container*/
+div.submit_button{
+  padding-top: 5%;
+  margin-right: 5%;
+}
+
+button>img{
+  float: right;
+  padding-top: 0.5%;
+  width: 7%;
+  height: auto;
+}
+
+/*Adminbutton*/
+button.admin_button{
+  float: right;
+  width: 100%;
+  max-width: 7em;
+  border: 0em;
+  margin: 4% 5% 0 0;
+  border-radius: 2em;
+
+}
+.admin_button>a{
+  color:#999999;
+  text-decoration: none;
+}
+
+
+/*RESPONSIVE max. 400px für Smartphone - reagiert bei mir bei 980px?!*/
+@media only screen and (max-width: 980px) {
+
+
+  /*Formular*/
+div.div_formular{
+  width: 100%;
+  max-width: 38em;
+  max-height:65em;
+  margin: auto;
+  margin-top: 2em;
+  border: 0.2em solid;
+  border-color: #f3931c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+}
+
+/*Flexbox headline*/
+div.headline{
+  display: flex;
+  align-items: center;
+  margin: 3% 0 0 -3% ;
+  padding: 1% 0 4% 0;
+}
+
+img{
+  padding: 1% 2% 0 3%;
+  height: 3em;
+}
+
+.h1{
+  width: 100%;
+  margin-left: 2%;
+}
+
+/*Flexbox Vor- und Nachname*/
+div.inputfields_vor_und_nachname{
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 5%;
+}
+
+div.div_vorname{
+  width: 100%;
+  height: 7em;
+}
+
+div.div_nachname{
+  width: 100%;
+  height: 7em;
+}
+
+/*Flexbox Email und Telefon*/
+div.inputfields_email_und_telefon{
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 5%;
+}
+
+div.div_email{
+  width: 100%;
+  height: 7em;
+}
+
+div.div_telefon{
+  width: 100%;
+  height: 7em;
+}
+
+/*Flexbox Datenschutz*/
+div.container{
+  display: flex;
+  align-items: center;
+  margin: -2% 5% 0 2%;
+}
+
+/*Eingabefelder*/
+input{
+  height: 5em;
+  width: 100%;
+  max-width: 30em;
+  background-color: #f5f5f5;
+  border: 0em;
+}
+
+::placeholder{
+  padding-left: 10px;
+  padding-top: 0.6em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color:#999999;
+}
+
+/*Beschriftung oberhalb Eingabefeldern*/
+label{
+  margin: 2% 0 3% 5%;
+  color: #f3931c;
+  font-size: 1.1em;
+}
+
+div,label{
+  margin-left: 5%;
+}
+
+/*Verhältnis Beschriftung & Eingabefeld*/
+label,input{
+  display: block;
+  border-radius: 2em;
+  font-family: 'Roboto', sans-serif; 
+}
+
+/*Input Vorname*/
+input#vorname{
+  padding-left: 0.5em;
+}
+
+/*Input Nachname*/
+input#nachname{
+  padding-left: 0.5em;
+}
+
+/*Input Email*/
+input#email{
+  padding-left: 0.5em;
+}
+
+/*Input Telefon*/
+input#telefonnummer{
+  padding-left: 0.5em;
+}
+
+/*Textbox / Textarea*/
+div.textbox{
+  display: block;
+  margin: 5% 5% 5%;
+}
+
+textarea#text{
+  width: 100%;
+  max-width: 61em;
+  height: 25em;
+  border-radius: 2em;
+  background-color:#f5f5f5;
+  border: 0em;
+  font-family: 'Roboto', sans-serif;  
+  padding: 0.5em;
+  margin-bottom: 1em;
+
+}
+
+/*Text Datenschutz*/
+.datenschutz>p{
+  font-size: 1em;
+  display: block;
+  text-align: left;
+}
+
+/*Text unter Submit-Button*/
+p{
+  font-size: 1em;
+  display: block;
+  text-align: center;
+}
+
+/* Switch-Button - Box*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4em;
+  height: 2.2em;
+  margin-left: 5%;
+}
+
+/* Default Checkbox unsichtbar machen */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Switch-Button */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 2em;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.3em;
+  width: 1.3em;
+  left: 0.4em;
+  bottom: 0.45em;
+  background-color: #999999;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/*Farbänderung, wenn Slider aktiv*/
+input:checked + .slider {
+  background-color: #f3931c;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(2em);
+  -ms-transform: translateX(2em);
+  transform: translateX(2em);
+}
+
+/*Datenschutz-Text*/
+a:link, a:visited {
+  text-decoration: none;
+  color:deeppink;
+ }
+ 
+/*Submit-Button*/
+.submit{
+  height: 3em;
+  width: 100%;
+  max-width: 70em;
+  background-color: #f3931c;
+  color: white;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 2em;
+  text-align: left;
+  line-height: 2.5;
+  padding-left: 3%;
+  margin: 1em 0 1em 0;
+  font-size: 1.1em;
+  
+}
+
+/*Submit-Button: Container*/
+div.submit_button{
+  padding-top: 5%;
+  margin-right: 5%;
+}
+
+button>img{
+  float: right;
+  padding-top: 0.5%;
+  width: 7%;
+  height: auto;
+}
+
+/*Adminbutton*/
+button.admin_button{
+  float: right;
+  width: 100%;
+  max-width: 12em;
+  height: 3em;
+  border: 0em;
+  margin: 4% 5% 0 0;
+  border-radius: 2em;
+  font-size: 0.7em;
+
+}
+.admin_button>a{
+  color:#999999;
+  text-decoration: none;
+}
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Kontaktformular</title>
+        <link rel="stylesheet" href="css/format.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="div_formular">
+            <!--Flexbox Logo und H1-->
+            <div class="headline">
+                <div>
+                    <img src='icons/icon-headline.svg' id='icon'>
+                </div>
+                <div class="h1">
+                    <h1>Ihre Nachricht</h1>
+                </div>
+            </div>
+
+            <form action='php/formular.php'method='post'>
+        
+            <!--Flexbox Vor- und Nachname-->
+            <div class="inputfields_vor_und_nachname">
+                <div class="div_vorname">
+                    <label for="vorname">Vorname*</label>
+                    <input name="vorname" type="text" id="vorname" class="" placeholder="Vorname" required/> 
+                </div>
+                <div class="div_nachname">
+                    <label for="nachname">Nachname*</label>
+                    <input name="nachname" type="text" id="nachname" class="" placeholder="Nachname" required/><br> 
+                </div>
+            </div>
+
+            <!--Flexbox Email und Telefon-->
+            <div class="inputfields_email_und_telefon">
+                <div class="div_email">
+                    <label for="email">E-Mail Kontakt*</label>
+                    <input name="email" type="email" id="email" class="" placeholder="E-Mail-Adresse" required/>
+                </div>
+                <div class="div_telefon">
+                    <label for="telefonnummer">Telefonnummer*</label>
+                    <input name="telefonnummer" type="number" id="telefonnummer" class="" placeholder="Telefonnummer" min="11" required/><br>
+                </div>
+            </div>
+
+            <!--Textarea-->
+            <div class="textbox">
+                <label for="text">Ihre Nachricht</label>
+                <textarea name="text" class="" id="text" placeholder="Ihre Nachricht an uns" value='' required></textarea><br>
+            </div>
+
+            <!--Flexbox Datenschutz-->
+            <label>Einwilligung zum Datenschutz*</label>
+            <div class="container">
+                <div class="switch_and_text">
+                    <label class="switch">
+                    <input type="checkbox" required><span class="slider"></span>
+                    </label>
+                </div>
+                <div class="datenschutz">
+                    <p>Die <a href="pages/datenschutz.html">Datenschutzerklärung</a> habe ich gelesen und verstanden. Ich bin mit einer Speicherung der von mit übermittelten Daten einverstanden.</p>
+                </div>
+            </div>
+
+            <!--Submit-Button-->
+            <div class="submit_button">
+                <button type="submit" name="submit" class="submit" value="Nachricht senden">Nachricht senden<img src='icons/arrow-icon.svg' id='icon'></button>
+                <p>Mit * markierte Felder sind Pflichtfelder.</p>
+            </div>
+
+            <button class="admin_button"><a href="pages/adminlogin.html">Admin-Login</a></button>
+            
+            </form>
+        </div>
+    </body>
+</html>
